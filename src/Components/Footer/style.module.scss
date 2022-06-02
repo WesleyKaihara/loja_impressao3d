@@ -1,0 +1,17 @@
+$cor1:#5cceee;
+$cor2:#24c0eb;
+$cor3:#cacaca;
+$cor4:#eee8e8;
+$cor5:#f1ebeb;
+
+.footer{
+  height: 10vh;
+  width: 100%;
+  background-color:#24c0eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    color: $cor5;
+  }
+}
