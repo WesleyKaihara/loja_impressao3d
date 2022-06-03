@@ -1,0 +1,93 @@
+$cor1:#5cceee;
+$cor2:#24c0eb;
+$cor3:#cacaca;
+$cor4:#eee8e8;
+$cor5:#f1ebeb;
+
+.infoProduto{
+  width: 80%;
+  margin: 5vh auto ;
+  display: flex;
+  gap: 5vw;
+}
+
+.imgContainer{
+  width: 50%;
+  img{
+    width: 100%;
+    height: 65vh;
+  }
+}
+
+.infoContent{
+  width: 50%;
+  h1{
+    font-size:2.5em;
+    color:$cor1;
+  }
+  h2{
+    font-size: 1.5em;
+    margin-top: 4vh;
+    &::before{
+      content: "R$ ";
+    }
+  }
+  .desconto{
+    color: #999;
+    font-weight: lighter;
+    margin-top: .5vh;
+    font-size: .9em;
+  }
+  .desc{
+    margin-top: 5vh;
+  } 
+  .cepContainer{
+    display: flex;
+    align-items: center;
+    gap:.5em;
+    margin: 3vh 0;
+  }
+  .fretesContainer{
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border: 1px solid $cor2;
+    .freteHead{
+      display: flex;
+      justify-content: space-evenly;
+      padding: 2vh;
+      background: $cor2;
+      p{
+        width: 33%;
+        text-align: center;
+      }
+    }
+    .FreteItem{
+      display: flex;
+      justify-content: space-evenly;
+      padding: 2vh 2vh ;
+      p{
+        width: 33%;
+        text-align: center;
+      }
+    }
+  }
+ 
+}
+
+.Comentarios{
+  .titleContainer{
+    margin: 5vh;
+    .title{
+      text-align: center;
+      font-size: 2.5em;
+      color: $cor1;
+    }
+    .line{
+      width: 50%;
+      margin: 1vh auto;
+      height: 3px;
+      background: $cor2;
+    }
+  }
+  
+}

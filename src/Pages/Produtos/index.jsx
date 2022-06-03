@@ -52,6 +52,7 @@ export default function Produtos() {
           produtosFiltrados.map((produto) => {
             return (
               <Card
+                id={produto.ID}
                 key={produto.ID}
                 src={`http://localhost/BlubeeServer/getImage.php?id=${produto.ID}`}
                 nome={produto.NOME}

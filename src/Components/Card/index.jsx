@@ -2,10 +2,10 @@ import style from './style.module.scss';
 
 export default function Card(props) {
 
-  const { src, nome, valor } = props;
+  const { id, src, nome, valor } = props;
   return (
 
-    <a href="/ProdutoInfo">
+    <a href={`/ProdutoInfo/${id}`}>
       <div className={style.card}>
         <div className={style.ImgContainer}>
           <img src={src} alt={nome} />

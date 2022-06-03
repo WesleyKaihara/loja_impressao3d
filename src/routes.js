@@ -15,7 +15,7 @@ export default function Rotas() {
         <Route path="/produtos" element={<Produtos />} exact />
         <Route path="/formProdutos" element={<FormProdutos />} exact />
         <Route path="/contato" element={<Contato />} exact />
-        <Route path="/ProdutoInfo" element={<ProdutoInfo />} exact />
+        <Route path="/ProdutoInfo/:id" element={<ProdutoInfo />} exact />
       </Routes>
     </Router>
   );

@@ -24,9 +24,15 @@ $cor5:#f1ebeb;
   margin: 3vh auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 4vh;
 }
 
 .novoProduto{
-
+  width: 15em;
+  height: 21em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#f1f1f1; 
 }
