@@ -3,25 +3,55 @@ $cor2:#24c0eb;
 $cor3:#cacaca;
 $cor4:#eee8e8;
 $cor5:#f1ebeb;
+$cor6:#1fb1d9;
 
+.ProdutosContent{
+  background: url(../../images/fundo.svg );
+  background-size: cover;
+  padding-bottom: 10vh;
+}
 .subMenu{
   width: 100%;
-  background: $cor2;
-  padding: 0 2vh 2vh;
+  padding: 0 2vh 10vh;
   display: flex;
   justify-content: right;
+  align-items: center;
+  gap: 2vh;
+  background: $cor2;
+  .categorias{
+    display: flex;
+    gap: 3vh;
+    button{
+      background: $cor1;
+      border: none;
+      padding: 1vh 5vh;
+      color: #fff;      
+      cursor: pointer;
+      transition: all .5s;
+      &:hover{
+        background: $cor6;
+        transform: scale(1.05);
+      }
+    }
+  }
   .pesquisa{
     border: 1px solid $cor3;
-    padding: 1vh;
-    margin-right: 2em;
+    padding: 1vh ;
     border-radius: 5px;
-    width: 15%;
+    width: 15em;
   }
+}
+.title{
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+  margin: 3vh 0 5vh;
+  padding-bottom: 10vh;
 }
 
 .produtosContainer{
   width: 90%;
-  margin: 3vh auto;
+  margin: 3vh auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,3 +66,4 @@ $cor5:#f1ebeb;
   align-items: center;
   background:#f1f1f1; 
 }
+

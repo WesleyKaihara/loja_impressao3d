@@ -12,10 +12,11 @@ $cor5:#f1ebeb;
 }
 
 .imgContainer{
-  width: 50%;
+  width: 30em;
+  height: 30em;
   img{
     width: 100%;
-    height: 65vh;
+    height: 100%;
   }
 }
 
@@ -40,12 +41,52 @@ $cor5:#f1ebeb;
   }
   .desc{
     margin-top: 5vh;
+    line-height: 1.8em;
+    text-align: justify;
   } 
   .cepContainer{
     display: flex;
     align-items: center;
     gap:.5em;
     margin: 3vh 0;
+    .icon{
+      color: $cor2;
+      font-size: 1.5em;
+    }
+    input{
+      padding: 1vh;
+      transition: .3s;
+      width: 40%;
+      height: 3em;
+      &:focus{
+        box-shadow: 0 0 10px $cor1;
+      }
+    }
+    .btn{
+      background: $cor2;
+      border: none;
+      height: 3em;
+      display: flex;
+      align-items: center;
+      padding: 1vh 2vh;
+      color: #f1f1f1;
+      transition: .5s ease-in;
+      border: 1px solid $cor2;
+      box-shadow: 0 0 10px #f1f1f1;
+      &:hover{
+        background: $cor1;
+        color:$cor4;
+        box-shadow: 0 0 10px $cor1;
+      }
+    }
+    .BuscaCep{
+      color: $cor2;
+      transition: .3s;
+      &:hover{
+        transform: scale(1.04);
+        color: $cor1;
+      }
+    }
   }
   .fretesContainer{
     background-color: #f1f1f1;
@@ -90,4 +131,22 @@ $cor5:#f1ebeb;
     }
   }
   
+}
+
+@media (max-width:850px) {
+  .infoProduto{
+    width: 90% ;
+    gap: 5vw;
+    flex-direction: column;
+    .infoContent{
+      width: 100%;
+    }
+    .imgContainer{
+      width: 100% ;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }

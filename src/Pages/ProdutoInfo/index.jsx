@@ -21,6 +21,7 @@ export default function ProdutoInfo(props) {
     let cep = document.getElementById("cep");
     axios.get(`http://localhost/BlubeeServer/calculaFrete.php?cep=${cep.value}`)
       .then(res => setFretes(res.data));
+
   }
 
   function getEmpresa(ID) {
@@ -48,8 +49,8 @@ export default function ProdutoInfo(props) {
             <p className={style.desconto}>Em até 2x de R${(parseFloat(info.VALOR) / 2 + parseFloat(info.VALOR) * 0.05).toFixed(2)} sem juros</p>
             <p className={style.desc}>{info.DESCRICAO}</p>
             <div className={style.cepContainer}>
-              <FontAwesomeIcon icon={faTruck} />
-              <input type="text"
+              <FontAwesomeIcon icon={faTruck} className={style.icon} />
+              <input type="number"
                 placeholder='Insira o seu CEP'
                 onChange={(e) => (e.target.value.length >= 8) ?
                   setDisabled(false) : null
@@ -57,8 +58,8 @@ export default function ProdutoInfo(props) {
                 name="cep"
                 id="cep"
               />
-              <button disabled={disabled} onClick={getFretes}>Calcular Frete</button>
-              <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noreferrer">Não sei meu CEP</a>
+              <button disabled={disabled} onClick={getFretes} className={style.btn}>Calcular Frete</button>
+              <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noreferrer" className={style.BuscaCep}>Não sei meu CEP</a>
             </div>
             {(typeof fretes !== 'undefined') ?
               <div className={style.fretesContainer}>

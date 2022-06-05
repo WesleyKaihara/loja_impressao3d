@@ -36,7 +36,7 @@ a{
   }
     .valor{
       font-weight: bold;
-      color: #444;
+      color: $cor1;
     }
   .valor::before{
     content: "R$ ";
@@ -58,14 +58,5 @@ a{
   }
   .link{
     color:#000;
-    background: $cor2;
-    width: fit-content;
-    padding: 1vh 3vh;
-    border-radius: 80px;
-    transition: all .5s ;
-    &:hover{
-      background: $cor1;
-      transform: scale(1.05);
-    }
   }
 }

@@ -5,13 +5,110 @@ $cor4:#eee8e8;
 $cor5:#f1ebeb;
 
 .footer{
-  height: 10vh;
+  padding: 8vh 0;
   width: 100%;
-  background-color:#24c0eb;
   display: flex;
-  justify-content: center;
   align-items: center;
-  p{
-    color: $cor5;
+  background-color:#24c0eb;
+  .Container{
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20vh;
+    h1{
+      font-size: 1.4em;
+      color: #444;
+      margin-bottom: 2vh;
+    }
+    .categorias{
+      width: 10%;
+      ul{
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        li{
+          width:30%;
+          color: #555;
+          transition: all .3s ease;
+          font-size: 1em;
+          &:hover{
+            color: #999;
+          }
+        }
+      }
+    }
+    .contato{
+      width: 20%;
+      ul{
+        margin-top: 1vh;
+        li{
+          text-align: justify;
+          color: #555;
+          font-size: 1em;
+        }
+      }
+    }
+    .entregas{
+      width: 15%;
+      p{
+        width: 20vh;
+        height: 8vh;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .pagamentos{
+      width: 20%;
+      justify-content: center;
+      img{
+        width: 20vh;
+        height:8vh;
+      }
+    }
+  }
+}
+
+@media (max-width:750px) {
+  .Container{
+    flex-direction: column;
+    gap: 5vh !important;
+    h1{
+      text-align: center;
+    }
+  }
+  .categorias{
+   
+    ul{
+      li{
+        width:100% !important;
+        text-align: center;
+      }
+    }
+  }
+  .contato{
+    width: 100% !important;
+    ul{
+      li{
+        text-align: center !important;
+      }
+    }
+  }
+  .entregas{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    align-items: center;
+  }
+  .pagamentos{
+    width: 100% !important;
+    display: flex !important;
+    align-items: center;
+    gap: 5vh;
   }
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './global-styles.css';
-import App from './Pages/Home';
 import reportWebVitals from './reportWebVitals';
 import Rotas from './routes';
 
@@ -14,7 +13,6 @@ root.render(
   <React.StrictMode>
     <Rotas />
     <Header />
-    <App />
     <Footer />
   </React.StrictMode>
 );

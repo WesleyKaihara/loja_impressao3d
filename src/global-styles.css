@@ -53,3 +53,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body::-webkit-scrollbar {
+  width:20px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #24c0eb;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #24c0eb;  /* creates padding around scroll thumb */
+}

@@ -14,24 +14,46 @@ $cor5:#f1ebeb;
 .formContainer{
   width: 50%;
   margin: 3vh auto 9vh;
+  .cadastroContainer{
+    display: flex;
+    gap: 5vh;
+    position: relative;
+    .listaCadastrados{
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      height: 20vh;
+      overflow: auto;
+      tr{
+        border: 3px solid #cacaca;
+        td{
+          padding: 1vh 2vh;
+        }
+      }
+    }
+  }
   .form{
     width: 100%;
   }
   label{
     color: $cor2;
   }
-  input {
+  input,textarea{
     width: 100%;
     padding: 1vh;
     margin:1.5vh 0 3vh;
   }
   .SubmitBtn{
-      background: $cor1;
+      background: $cor2;
       border: none;
       border-radius: 5px;
       padding: 2vh;
       color: #fff;
       cursor: pointer;
+      transition: all .5s;
+      &:hover{
+        background: $cor1;
+      }
     }
 }
 
@@ -41,6 +63,13 @@ $cor5:#f1ebeb;
   }
   .formContainer{
     width: 90%;
+  }
+  .cadastroContainer{
+    flex-direction: column;
+    .listaCadastrados{
+      width: 80% !important;
+      margin: auto;
+    }
   }
 }
 

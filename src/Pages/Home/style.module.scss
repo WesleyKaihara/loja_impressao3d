@@ -1,0 +1,167 @@
+
+$cor1:#5cceee;
+$cor2:#24c0eb;
+$cor3:#cacaca;
+$cor4:#eee8e8;
+$cor5:#f1ebeb;
+$cor6:#084657;
+.ContatoLogo{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom:1em;
+  right: 1em;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.titleCombos{
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  margin:35vh 0 8vh;
+}
+
+.Combos{
+  width: 80%;
+  margin: 5vh auto 20vh ;
+  display: flex;
+  gap: 10vh;
+  img{
+    width: 50%;
+    border-radius: 30% 0 30% 0 ;
+    border: 15px solid $cor2;
+  }
+  div{
+    width: 50%;
+    h2{
+      font-size: 2.5em;
+      text-align: center;
+      color: $cor6;
+    }
+    ul{
+      margin-top: 8vh;
+      list-style: disc;
+      li{
+        margin: 3vh;
+        font-size: 1.8em;
+      }
+    }
+    h3{
+      font-size: 2em;
+      color: $cor2;
+      margin: 5vh 0 2vh; 
+    }
+    small{
+      color: #666;
+    }
+    button{
+      background: $cor2;
+      padding: 1vh 8vh;
+      color: #fff;
+      margin: 2vh 0;
+      border: none;
+      transition: all .5s ease;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.05);
+        background: $cor1;
+      }
+    }
+  }
+}
+
+.home{
+  .Container{
+    margin: auto;
+    padding: 5vh 0 200vh;
+    background: url(../../images/fundo.svg);
+    background-size: cover;
+    .title,.title2{
+      padding: 2vh 20vh;
+      font-size: 3em;
+      color:#fff;
+      text-align: center;
+    }
+    .title2{
+      color: $cor6;
+    }
+    .produtosHome{
+      padding: 0 10vh;
+      margin: 8vh 0 10vh;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3vw;
+      justify-content: center;
+    }
+  }
+  
+}
+
+.banner{
+  width: 100%;
+  height: 54vh;
+  background: url(../../images/banner.jpg);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position:top;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1{
+    font-size: 5vh;
+    margin: 2vh 0;
+    text-align: center;
+    color: #333;
+  }
+  p{
+    width: 70%;
+    text-align: center;
+    line-height: 1.5em;
+    color: #555;
+  }
+}
+
+@media(max-width:910px){
+  .title,.title2{
+    padding: 2vh 0 !important;
+    font-size: 3em;
+    color:#fff;
+    text-align: center;
+  }
+  .Combos{
+    width: 90%;
+    margin: 5vh auto 20vh ;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    img{
+      width: 100%;
+      border: none;
+    }
+    div{
+      width: 100%;
+      h2{
+        font-size: 2em;
+      }
+      ul{
+        margin-top: 2vh;
+        li{
+          font-size: 1.5em;
+        }
+      }
+      h3{
+        font-size: 2.5em;
+        color: #fff;
+        margin: 2vh 0 2vh; 
+      }
+      button{
+        background: #fff;
+        color: $cor2;
+        border: 5px solid $cor2;
+      }
+    }
+  }
+}
