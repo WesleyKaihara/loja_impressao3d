@@ -5,6 +5,19 @@ $cor3:#cacaca;
 $cor4:#eee8e8;
 $cor5:#f1ebeb;
 $cor6:#084657;
+
+.Colorwhite{
+  color: #fff !important;
+}
+
+.colorPrincipal{
+  color: $cor2 !important;
+}
+
+.bgWhite{
+  background: #fff !important;
+}
+
 .ContatoLogo{
   position: fixed;
   width: 60px;
@@ -16,7 +29,7 @@ $cor6:#084657;
 }
 
 .titleCombos{
-  color: #fff;
+  color: $cor6;
   font-size: 3em;
   text-align: center;
   margin:35vh 0 8vh;
@@ -74,9 +87,10 @@ $cor6:#084657;
 .home{
   .Container{
     margin: auto;
-    padding: 5vh 0 200vh;
-    background: url(../../images/fundo.svg);
+    padding: 5vh 0 5vh;
+    background: url(../../images/fundo2.svg);
     background-size: cover;
+    overflow: hidden;
     .title,.title2{
       padding: 2vh 20vh;
       font-size: 3em;
@@ -121,6 +135,22 @@ $cor6:#084657;
     text-align: center;
     line-height: 1.5em;
     color: #555;
+  }
+}
+
+@media(max-width:710px){
+  .produtosLista{
+    width: 90%;
+    margin: auto;
+  }
+  .produtosHome{
+    padding: 0 0 10vh 0 !important;
+    margin: 8vh 0 10vh;
+    display: flex;
+    overflow: auto !important;
+    flex-wrap: nowrap !important;
+    gap: 3vw;
+    justify-content: left !important;
   }
 }
 

@@ -1,0 +1,125 @@
+$cor1:#5cceee;
+$cor2:#24c0eb;
+$cor3:#cacaca;
+$cor4:#eee8e8;
+$cor5:#f1ebeb;
+$cor6:#1fb1d9;
+
+
+.Carrinho{
+  background: #f1f1f1;
+  padding: 5vh 0;
+  .Container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .title{
+    padding: 8vh 10%;
+    font-size: 3em;
+    color: $cor2;
+  }
+  .produtos{
+    width: 70%;
+    background: #fff;
+    padding: 3vh;
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5vh;
+    }
+    h1{
+      color: #555;
+      font-size: 2em;
+      padding: 0 0 3vh; 
+    }
+    .remover{
+      border: 2px solid red;
+      color: red;
+      background: #fff;
+      padding: 1vh;
+      cursor: pointer;
+      transition: all .5s ;
+      font-weight: bold;
+      font-size: .9rem;
+      &:hover{
+        transform: scale(1.02);
+        background: red;
+        color: #fff;
+      }
+    }
+  }
+  .pagar{
+    background: #fff;
+    width: 25%;
+    padding: 2vh;
+    color: #666;
+    &Title{
+      text-align: center;
+      padding: 2vh;
+      font-size: 1.5em;
+    }
+    .Pix{
+      width: 90%;
+      margin: 3vh auto;
+      background: #17dd1716;
+      padding: 3vh 1vh;
+      h1{
+        color: #07ba07;
+        padding: 1vh;
+      }
+      h2{
+        font-size: 2em;
+        color: #07ba07;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 1vh;
+      }
+      p{
+        text-align: right;
+        margin: 2vh 1vh;
+        color: #07ba07;
+      }
+    }
+    button{
+      border: 2px solid red;
+      color: red;
+      background: #fff;
+      padding:.5vh 3vh;
+      margin: 0 2vh;
+      transition: all .5s ease;
+      cursor: pointer;
+      &:hover{
+        background: red;
+        color: #fff;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media(max-width:1100px){
+  header{
+    gap: 2vh;
+  }
+  h1{
+    font-size: 1.5em !important;
+  }
+  .remover{
+    padding: .5vh !important;
+    font-size: .7rem !important;
+  }
+  .Container{
+    flex-direction: column-reverse;
+    gap: 5vh;
+    .produtos{
+      width: 100%;
+    }
+    .pagar{
+      width: 100%;
+    }
+  }
+}
+

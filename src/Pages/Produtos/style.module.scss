@@ -6,7 +6,7 @@ $cor5:#f1ebeb;
 $cor6:#1fb1d9;
 
 .ProdutosContent{
-  background: url(../../images/fundo.svg );
+  background: url(../../images/fundo2.svg );
   background-size: cover;
   padding-bottom: 10vh;
 }
@@ -42,7 +42,7 @@ $cor6:#1fb1d9;
   }
 }
 .title{
-  font-size: 3em;
+  font-size: 3em !important;
   color: #fff;
   text-align: center;
   margin: 3vh 0 5vh;
@@ -59,11 +59,29 @@ $cor6:#1fb1d9;
 }
 
 .novoProduto{
-  width: 15em;
+  width: 17em;
   height: 21em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background:#f1f1f1; 
+  background:#fff; 
+  transition: all .5s ease;
+  border: 3px solid $cor2;
+  color: $cor2;
+  &:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px $cor6;
+  }
 }
 
+@media(max-width:1100px){
+  .categorias{
+    display: none !important;
+  }
+  .title{
+    padding-bottom: 0;
+  }
+  .pesquisa{
+    width: 100% !important;
+  }
+}

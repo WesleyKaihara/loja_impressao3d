@@ -12,7 +12,9 @@ export default function Produtos(props) {
   const [busca, setBusca] = useState(linkPesquisa);
   const [produtosFiltrados, setprodutosFiltrados] = useState(produtos);
 
-  const ip = "192.168.15.46";
+  // const ip = "192.168.15.46";
+  const ip = "172.22.214.75";
+
 
   useEffect(() => {
 
@@ -30,9 +32,11 @@ export default function Produtos(props) {
     produtos.forEach(item => {
       if (pesquisa === item.CATEGORIA) {
         itens.push(item);
+        setBusca(`[ ${pesquisa} ]`);
       }
     });
     setprodutosFiltrados(itens);
+
   };
 
 
@@ -59,7 +63,6 @@ export default function Produtos(props) {
           <button id="Miniaturas" onClick={(e) => pesquisaCategoria(e.target.id)}>Miniaturas</button>
           <button id="Acessórios" onClick={(e) => pesquisaCategoria(e.target.id)}>Acessórios</button>
           <button id="Combos" onClick={(e) => pesquisaCategoria(e.target.id)}>Combos</button>
-
         </div>
         <input type="text"
           className={style.pesquisa}
@@ -94,8 +97,8 @@ export default function Produtos(props) {
         </a>
 
 
-      </div>
-    </section>
+      </div >
+    </section >
   );
 }
 

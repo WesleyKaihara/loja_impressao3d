@@ -3,6 +3,7 @@ $cor2:#24c0eb;
 $cor3:#cacaca;
 $cor4:#eee8e8;
 $cor5:#f1ebeb;
+$cor6:#0c5164;
 
 .header{
   height: 14vh;
@@ -27,6 +28,7 @@ $cor5:#f1ebeb;
     ul{
       display: flex;
       gap: 5vh;
+      align-items: center;
       li{
         font-size: 1.5em;
         color: #fff;
@@ -34,6 +36,13 @@ $cor5:#f1ebeb;
         &:hover{
           transform: scale(1.1);
         }
+      }
+      .cart{
+        display: flex;
+        gap: 1vh;
+        background: $cor1;
+        padding: 1vh 4vh;
+        border-radius: 40px;
       }
     }
   }
@@ -47,10 +56,11 @@ $cor5:#f1ebeb;
   padding: 2vh 0;
 }
 
+
 .openMenu{
   display: flex !important;
 }
-@media (max-width:650px){
+@media (max-width:730px){
   .header{
     flex-direction: column;
     height: 14vh;

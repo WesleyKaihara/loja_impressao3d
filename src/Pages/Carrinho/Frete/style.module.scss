@@ -1,0 +1,86 @@
+$cor1:#5cceee;
+$cor2:#24c0eb;
+$cor3:#cacaca;
+$cor4:#eee8e8;
+$cor5:#f1ebeb;
+$cor6:#1c809c;
+a{
+  text-decoration: none;
+}
+
+.calcFrete{
+  width: 80%;
+  margin: auto;
+}
+
+.cepContainer{
+  display: flex;
+  align-items: center;
+  gap:.5em;
+  margin: 3vh 0;
+  .icon{
+    color: $cor2;
+    font-size: 1.5em;
+  }
+  input{
+    padding: 1vh;
+    transition: .3s;
+    width: 40%;
+    height: 3em;
+    &:focus{
+      box-shadow: 0 0 10px $cor1;
+    }
+  }
+  .btn{
+    background: $cor2;
+    border: none;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    padding: 1vh 2vh;
+    color: #f1f1f1;
+    transition: .5s ease-in;
+    border: 1px solid $cor2;
+    box-shadow: 0 0 10px #f1f1f1;
+    &:hover{
+      background: $cor1;
+      color:$cor4;
+      box-shadow: 0 0 10px $cor1;
+    }
+  }
+  .BuscaCep{
+    color: $cor2;
+    transition: .3s;
+    &:hover{
+      transform: scale(1.04);
+      color: $cor1;
+    }
+  }
+}
+
+.fretesContainer{
+  width: 70%;
+  margin: 4vh 0;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  border: 1px solid $cor2;
+  .freteHead{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vh;
+    background: $cor2;
+    p{
+      width: 33%;
+      text-align: center;
+    }
+  }
+  .FreteItem{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3vh 2vh ;
+    p{
+      width: 33%;
+      text-align: center;
+    }
+  }
+}

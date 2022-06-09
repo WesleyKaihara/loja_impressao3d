@@ -6,6 +6,7 @@ import App from './Pages/Home';
 import Produtos from './Pages/Produtos';
 import Contato from './Pages/Contato';
 import ProdutoInfo from './Pages/ProdutoInfo';
+import Carrinho from './Pages/Carrinho';
 
 export default function Rotas() {
   return (
@@ -16,6 +17,7 @@ export default function Rotas() {
         <Route path="/formProdutos" element={<FormProdutos />} exact />
         <Route path="/contato" element={<Contato />} exact />
         <Route path="/ProdutoInfo/:id" element={<ProdutoInfo />} exact />
+        <Route path="/carrinho" element={<Carrinho />} exact />
       </Routes>
     </Router>
   );

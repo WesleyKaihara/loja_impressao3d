@@ -10,6 +10,7 @@ export default function ProdutoInfo(props) {
   const [info, setInfo] = useState();
   const [fretes, setFretes] = useState();
   const [disabled, setDisabled] = useState(true);
+  const [selected, setSelected] = useState(false);
 
   useEffect(() => {
     axios.get(`http://localhost/BlubeeServer/getProduto.php?id=${id}`)
@@ -32,6 +33,12 @@ export default function ProdutoInfo(props) {
     } else {
       return "-----"
     }
+  }
+
+  function addToCart() {
+    axios.get(`http://localhost/BlubeeServer/adicionarCarrinho.php?id=${id}`)
+      .then(res => res.data);
+    setSelected(true);
   }
 
   return (
@@ -61,6 +68,10 @@ export default function ProdutoInfo(props) {
               <button disabled={disabled} onClick={getFretes} className={style.btn}>Calcular Frete</button>
               <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noreferrer" className={style.BuscaCep}>Não sei meu CEP</a>
             </div>
+
+            <a href="/carrinho"><button className={(selected) ? style.carrinhoBtn : style.displayNone}>Ir para carrinho</button></a>
+            <button className={(selected) ? style.displayNone : style.carrinhoBtn} onClick={addToCart}>Adicionar ao carrinho</button>
+
             {(typeof fretes !== 'undefined') ?
               <div className={style.fretesContainer}>
 
@@ -97,9 +108,7 @@ export default function ProdutoInfo(props) {
           <h1 className={style.title}>Comentários</h1>
           <div className={style.line}></div>
         </div>
-
       </section>
     </section>
   );
 }
-

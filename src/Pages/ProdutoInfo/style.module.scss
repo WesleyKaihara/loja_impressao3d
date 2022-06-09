@@ -112,7 +112,20 @@ $cor5:#f1ebeb;
       }
     }
   }
- 
+  .carrinhoBtn{
+    background: $cor2;
+    border: none;
+    padding: 1vh 2vh;
+    margin: 2vh 0 ;
+    color: #ffff;
+    cursor: pointer;
+    transition: all .5s ease;
+    font-size: 1.1em;
+    &:hover{
+      transform: scale(1.03);
+      background: $cor1;
+    }
+  }
 }
 
 .Comentarios{
@@ -129,8 +142,11 @@ $cor5:#f1ebeb;
       height: 3px;
       background: $cor2;
     }
-  }
-  
+  }  
+}
+
+.displayNone{
+  display: none;
 }
 
 @media (max-width:850px) {
