@@ -12,8 +12,8 @@ export default function Produtos(props) {
   const [busca, setBusca] = useState(linkPesquisa);
   const [produtosFiltrados, setprodutosFiltrados] = useState(produtos);
 
-  // const ip = "192.168.15.46";
-  const ip = "172.22.214.75";
+  const ip = "192.168.15.46";
+  // const ip = "172.22.214.75";
 
 
   useEffect(() => {
@@ -95,7 +95,6 @@ export default function Produtos(props) {
             <h1>Cadastrar Novo</h1>
           </div>
         </a>
-
 
       </div >
     </section >

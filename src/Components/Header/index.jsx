@@ -8,8 +8,8 @@ import axios from 'axios';
 export default function Header() {
 
 
-  // const ip = "192.168.15.46";
-  const ip = "172.22.214.75";
+  const ip = "192.168.15.46";
+  // const ip = "172.22.214.75";
 
   const [menu, setMenu] = useState("");
   const [qtProdutos, setQtProdutos] = useState(0);

@@ -1,14 +1,14 @@
 import style from './style.module.scss';
 
 import whatsappLogo from '../../images/zap.png';
-import Card from '../../Components/Card';
 
 import Combo from '../../images/Combo01.png';
+import Produtos from './Produtos';
 
 export default function App() {
 
-  // const ip = "192.168.15.46";
-  const ip = "172.22.214.75";
+  const ip = "192.168.15.46";
+  // const ip = "172.22.214.75";
 
   return (
     <section className={style.home}>
@@ -20,32 +20,7 @@ export default function App() {
       <div className={style.Container}>
         <h1 className={style.title}>Novidades</h1>
         <div className={style.produtosLista}>
-          <div className={style.produtosHome}>
-            <Card
-              id={5}
-              src={`http://${ip}/BlubeeServer/getImage.php?id=${5}`}
-              nome="Suco Laranja"
-              valor="5.50"
-            />
-            <Card
-              id={5}
-              src={`http://${ip}/BlubeeServer/getImage.php?id=${5}`}
-              nome="Suco Laranja"
-              valor="5.50"
-            />
-            <Card
-              id={5}
-              src={`http://${ip}/BlubeeServer/getImage.php?id=${5}`}
-              nome="Suco Laranja"
-              valor="5.50"
-            />
-            <Card
-              id={5}
-              src={`http://${ip}/BlubeeServer/getImage.php?id=${5}`}
-              nome="Suco Laranja"
-              valor="5.50"
-            />
-          </div>
+          <Produtos />
         </div>
 
 
@@ -67,32 +42,7 @@ export default function App() {
 
         <h1 className={style.title2}>Destaques</h1>
         <div className={style.produtosLista}>
-          <div className={style.produtosHome}>
-            <Card
-              id={5}
-              src={`http://${ip}/BlubeeServer/getImage.php?id=${5}`}
-              nome="Suco Laranja"
-              valor="5.50"
-            />
-            <Card
-              id={5}
-              src={`http://${ip}/BlubeeServer/getImage.php?id=${5}`}
-              nome="Suco Laranja"
-              valor="5.50"
-            />
-            <Card
-              id={5}
-              src={`http://${ip}/BlubeeServer/getImage.php?id=${5}`}
-              nome="Suco Laranja"
-              valor="5.50"
-            />
-            <Card
-              id={5}
-              src={`http://${ip}/BlubeeServer/getImage.php?id=${5}`}
-              nome="Suco Laranja"
-              valor="5.50"
-            />
-          </div>
+          <Produtos />
         </div>
         <h1 className={style.titleCombos}>Combos - 3 em 1</h1>
         <div className={style.Combos}>
