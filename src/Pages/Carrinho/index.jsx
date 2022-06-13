@@ -9,9 +9,6 @@ import Frete from './Frete';
 
 export default function Produtos(props) {
 
-  // 192.168.15.46
-  // const ip = "172.22.214.75";
-
   // let valorTotal = 0;
   const [carrinho, setCarrinho] = useState([]);
   const [frete, setFrete] = useState(0);

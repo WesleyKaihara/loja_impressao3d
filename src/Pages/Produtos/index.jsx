@@ -12,10 +12,7 @@ export default function Produtos(props) {
   const [busca, setBusca] = useState(linkPesquisa);
   const [produtosFiltrados, setprodutosFiltrados] = useState(produtos);
 
-  const ip = "192.168.15.46";
-  // const ip = "172.22.214.75";
-
-
+  const ip = "localhost";
   useEffect(() => {
 
     axios.get(`http://${ip}/BlubeeServer/getProdutos.php`)
@@ -79,6 +76,7 @@ export default function Produtos(props) {
         {(typeof produtosFiltrados === 'undefined') ? <p>Loading...</p> :
 
           produtosFiltrados.map((produto) => {
+            console.log(produto)
             return (
               <Card
                 id={produto.ID}

@@ -7,7 +7,7 @@ import Produtos from './Produtos';
 
 export default function App() {
 
-  const ip = "192.168.15.46";
+  // const ip = "192.168.15.46";
   // const ip = "172.22.214.75";
 
   return (
